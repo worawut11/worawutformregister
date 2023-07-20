@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>กรอกข้อมูล</title>
+</head>
+
+<body>
+    <div class="text-topic fgreen">สมัครเรียน (ปีการศึกษา 1/2566) &nbsp; <span class="fblue">ระดับ ปวช. (ปกติ)</span>
+    </div>
+
+    <div style="margin-top:20px;">
+        <form id="step1Form" name="step1Form" action="https://admission.vec.go.th/web/student.htm?mode=registercheck#"
+            method="post">
+            <input type="hidden" id="pctzid" name="pctzid">
+            <input type="hidden" id="pbirthdate" name="pbirthdate">
+            <input type="hidden" id="levelid" name="levelid" value="10">
+            <input type="hidden" id="typeid" name="typeid" value="1">
+
+            <div class="text-title fblue" style="margin-bottom: 10px;">
+                <button type="button" class="btn" disabled="disabled">1</button>
+                &nbsp;2. กรอกข้อมูลผู้สมัครเรียน&nbsp;
+                <button type="button" class="btn" disabled="disabled">3</button>
+                <button type="button" class="btn" disabled="disabled">4</button>
+                <button type="button" class="btn" disabled="disabled">5</button>
+            </div>
+
+            <table class="adm-detail" width="100%" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="topic" style="padding-bottom: 10px;">ข้อมูลผู้สมัคร <span
+                                style="font-weight: normal;color: #ff0000;">(** ระบุ รหัสประจำตัวประชาชน และ วัน /เดือน
+                                /ปี เกิด เพื่อตรวจสอบข้อมูล)</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label" width="150">
+                            <font color="red">*</font> รหัสประจำตัวประชาชน :
+                        </td>
+                        <td colspan="3"><input id="citizenId" name="citizenId" type="text" size="25" maxlength="13">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            <font color="red">*</font> วัน /เดือน /ปี เกิด :
+                        </td>
+                        <td colspan="3">
+                            <select id="admDayBd" name="admDayBd">
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select id="admMonthBd" name="admMonthBd">
+                                <option value="01">มกราคม</option>
+                                <option value="02">กุมภาพันธ์</option>
+                                <option value="03">มีนาคม</option>
+                                <option value="04">เมษายน</option>
+                                <option value="05">พฤษภาคม</option>
+                                <option value="06">มิถุนายน</option>
+                                <option value="07">กรกฎาคม</option>
+                                <option value="08">สิงหาคม</option>
+                                <option value="09">กันยายน</option>
+                                <option value="10">ตุลาคม</option>
+                                <option value="11">พฤศจิกายน</option>
+                                <option value="12">ธันวาคม</option>
+                            </select>
+                            <select id="admYearBd" name="admYearBd">
+                                <option value="2497">2497</option>
+                                <option value="2498">2498</option>
+                                <option value="2499">2499</option>
+                                <option value="2500">2500</option>
+                                <option value="2501">2501</option>
+                                <option value="2502">2502</option>
+                                <option value="2503">2503</option>
+                                <option value="2504">2504</option>
+                                <option value="2505">2505</option>
+                                <option value="2506">2506</option>
+                                <option value="2507">2507</option>
+                                <option value="2508">2508</option>
+                                <option value="2509">2509</option>
+                                <option value="2510">2510</option>
+                                <option value="2511">2511</option>
+                                <option value="2512">2512</option>
+                                <option value="2513">2513</option>
+                                <option value="2514">2514</option>
+                                <option value="2515">2515</option>
+                                <option value="2516">2516</option>
+                                <option value="2517">2517</option>
+                                <option value="2518">2518</option>
+                                <option value="2519">2519</option>
+                                <option value="2520">2520</option>
+                                <option value="2521">2521</option>
+                                <option value="2522">2522</option>
+                                <option value="2523">2523</option>
+                                <option value="2524">2524</option>
+                                <option value="2525">2525</option>
+                                <option value="2526">2526</option>
+                                <option value="2527">2527</option>
+                                <option value="2528">2528</option>
+                                <option value="2529">2529</option>
+                                <option value="2530">2530</option>
+                                <option value="2531">2531</option>
+                                <option value="2532">2532</option>
+                                <option value="2533">2533</option>
+                                <option value="2534">2534</option>
+                                <option value="2535">2535</option>
+                                <option value="2536">2536</option>
+                                <option value="2537">2537</option>
+                                <option value="2538">2538</option>
+                                <option value="2539">2539</option>
+                                <option value="2540">2540</option>
+                                <option value="2541">2541</option>
+                                <option value="2542">2542</option>
+                                <option value="2543">2543</option>
+                                <option value="2544">2544</option>
+                                <option value="2545">2545</option>
+                                <option value="2546">2546</option>
+                                <option value="2547">2547</option>
+                                <option value="2548">2548</option>
+                                <option value="2549">2549</option>
+                                <option value="2550">2550</option>
+                                <option value="2551">2551</option>
+                                <option value="2552">2552</option>
+                                <option value="2553">2553</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="3">
+                            <input id="btn_check_ws" class="btn btn-primary" type="button" value="ตรวจสอบ">
+                            <input class="btn btn_refresh_ws" type="button" value="เริ่มใหม่" disabled="disabled">
+                            <label id="check_loading" style="display:none;color:green;">
+                                <img alt=""
+                                    align="absmiddle">
+                                &nbsp;กำลังตรวจสอบ กรุณารอสักครู่...
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+
+
+    </td>
+    </tr>
