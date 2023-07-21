@@ -12,7 +12,7 @@
     </div>
 
     <div style="margin-top:20px;">
-        <form id="step1Form" name="step1Form" action="https://admission.vec.go.th/web/student.htm?mode=registercheck#"
+        <form id="step1Form" name="step1Form" 
             method="post">
             <input type="hidden" id="pctzid" name="pctzid">
             <input type="hidden" id="pbirthdate" name="pbirthdate">
@@ -157,11 +157,11 @@
                     <tr>
                         <td>&nbsp;</td>
                         <td colspan="3">
-                            <input id="btn_check_ws" class="btn btn-primary" type="button" value="ตรวจสอบ">
-                            <input class="btn btn_refresh_ws" type="button" value="เริ่มใหม่" disabled="disabled">
+                            <button type="button" onclick="alert('Hello World!')">ตรวจสอบ</button>
+                            <button type="button" onclick="alert('Hello World!')">เริ่มใหม่</button>
                             <label id="check_loading" style="display:none;color:green;">
                                 <img alt=""
-                                    align="absmiddle">
+                                    < align="absmiddle">
                                 &nbsp;กำลังตรวจสอบ กรุณารอสักครู่...
                             </label>
                         </td>
